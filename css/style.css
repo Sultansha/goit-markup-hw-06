@@ -251,6 +251,13 @@ header {
   line-height: 1.88;
 
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color var(--main-time) var(--main-timing-function);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
 }
 
 .backdrop {
