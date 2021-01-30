@@ -455,30 +455,6 @@ header {
   background-color: var(--accent-color);
 }
 
-/* .icon-check,
-.icon-check-on {
-  position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  left: 0;
-  opacity: 1;
-  transition: opacity var(--main-time) var(--main-timing-function);
-}
-
-.icon-check-on {
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  opacity: 0;
-}
-
-.checkbox-consent:checked ~ .icon-check-on {
-  opacity: 1;
-}
-
-.checkbox-consent:checked ~ .icon-check {
-  opacity: 0;
-} */
-
 .button-close {
   position: absolute;
   right: 8px;
