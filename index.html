@@ -394,12 +394,58 @@
                     </li>
                 </ul>
             </div>
+            <form class="footer-part-follow">
+                <div class="footer-follow">
+                    <label>
+                        <p class="footer-plea">Подпишитесь на рассылку</p>
+                        <input type="email" name="email-for-follow" placeholder="E-mail" class="follow-input">
+                    </label>
+                </div>
+                <button type="submit" class="button follow-button">Подписаться
+                    <svg class="icon-follow" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </form>
         </div>
     </footer>
+
+    <!--Модальное окно-->
+
     <div data-modal class="backdrop is-hidden">
         <div class="modal-hero">
+            <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="modal-form">
+                <div class="form-field">
+                    <label class="form-label">Имя
+                        <input type="text" name="name" class="form-input">
+                    </label>
+                </div>
+                  <div class="form-field">
+                    <label class="form-label">Телефон
+                        <input type="tel" name="phone-number" class="form-input">
+                    </label>
+                </div>
+                <div class="form-field">
+                    <label class="form-label">Почта
+                        <input type="email" name="email" class="form-input">
+                    </label>
+                </div>
+                <div class="form-field-textarea">
+                    <label class="form-label">Комментарий
+                        <textarea name="comment" rows="7" placeholder="Введите текст" class="form-textarea"></textarea>
+                    </label>
+                </div>
+                <div class="checkbox-field">
+                    <label class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="conditions">Условия договора</a>
+                        <input class="checkbox" type="checkbox" name="consent" value="consent">
+                    </label>
+                </div>
+                <button type="submit" class="button modal-button">Отправить</button>
+            </form>
+            
             <button data-modal-close class="button-close">
-                <svg class="icon-close" width="11" height="11">
+                <svg width="11" height="11">
                     <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
