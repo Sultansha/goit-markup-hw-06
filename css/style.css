@@ -407,9 +407,12 @@ header {
 .checkbox-label {
   position: relative;
   display: inline-block;
-  width: 425px;
-  text-align: right;
-  padding-left: 24px;
+  width: 100%;
+  text-align: left;
+  padding-left: 36px;
+}
+.checkbox-consent:focus + .checkbox-label {
+  outline: 1px solid var(--title-color);
 }
 
 .conditions {
@@ -420,6 +423,7 @@ header {
 }
 
 .checkbox-field {
+  position: relative;
   width: 100%;
   margin-bottom: 30px;
 }
@@ -429,7 +433,28 @@ header {
   appearance: none;
 }
 
-.icon-check,
+.checkbox-label::before {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 13px;
+
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/svg/chek-off.svg);
+  transition: background-image var(--main-time) var(--main-timing-function),
+    background-color var(--main-timing-function) var(--main-timing-function);
+}
+
+.checkbox-consent:checked + .checkbox-label::before {
+  background-image: url(../images/svg/chek-on.svg);
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+/* .icon-check,
 .icon-check-on {
   position: absolute;
   transform: translateY(-50%);
@@ -451,7 +476,7 @@ header {
 
 .checkbox-consent:checked ~ .icon-check {
   opacity: 0;
-}
+} */
 
 .button-close {
   position: absolute;
