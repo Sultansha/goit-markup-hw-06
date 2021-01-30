@@ -411,6 +411,7 @@ header {
   text-align: left;
   padding-left: 36px;
 }
+
 .checkbox-consent:focus + .checkbox-label {
   outline: 1px solid var(--title-color);
 }
@@ -443,6 +444,7 @@ header {
   display: inline-block;
   width: 16px;
   height: 15px;
+  border-radius: 2px;
   background-image: url(../images/svg/chek-off.svg);
   transition: background-image var(--main-time) var(--main-timing-function),
     background-color var(--main-timing-function) var(--main-timing-function);
@@ -451,7 +453,6 @@ header {
 .checkbox-consent:checked + .checkbox-label::before {
   background-image: url(../images/svg/chek-on.svg);
   background-color: var(--accent-color);
-  border-radius: 2px;
 }
 
 /* .icon-check,
