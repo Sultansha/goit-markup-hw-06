@@ -341,9 +341,29 @@ header {
 }
 
 .form-label {
+  position: relative;
+
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+}
+
+.icon-input {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  fill: var(--title-color);
+  transition: fill var(--main-time) var(--main-timing-function);
+}
+
+.form-label:focus-within .icon-input {
+  fill: var(--accent-color);
+}
+
+.form-label:focus-within .form-input,
+.form-field-textarea:focus-within .form-textarea {
+  outline: none;
+  border: 1px solid var(--accent-color);
 }
 
 .form-input {
@@ -352,6 +372,7 @@ header {
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border var(--main-time) var(--main-timing-function);
 }
 
 .form-textarea {
@@ -384,8 +405,11 @@ header {
 }
 
 .checkbox-label {
+  position: relative;
+  display: inline-block;
   width: 425px;
-  padding-left: 14px;
+  text-align: right;
+  padding-left: 24px;
 }
 
 .conditions {
@@ -398,6 +422,35 @@ header {
 .checkbox-field {
   width: 100%;
   margin-bottom: 30px;
+}
+
+.checkbox-consent {
+  position: absolute;
+  appearance: none;
+}
+
+.icon-check,
+.icon-check-on {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  opacity: 1;
+  transition: opacity var(--main-time) var(--main-timing-function);
+}
+
+.icon-check-on {
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  opacity: 0;
+}
+
+.checkbox-consent:checked ~ .icon-check-on {
+  opacity: 1;
+}
+
+.checkbox-consent:checked ~ .icon-check {
+  opacity: 0;
 }
 
 .button-close {
@@ -414,6 +467,12 @@ header {
   background-color: inherit;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition: fill var(--main-time) var(--main-timing-function);
+}
+
+.button-close:hover,
+.button-close:focus {
+  fill: var(--accent-color);
 }
 
 /* Section features */

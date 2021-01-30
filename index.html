@@ -396,8 +396,8 @@
             </div>
             <form class="footer-part-follow">
                 <div class="footer-follow">
+                    <p class="footer-plea">Подпишитесь на рассылку</p>
                     <label>
-                        <p class="footer-plea">Подпишитесь на рассылку</p>
                         <input type="email" name="email-for-follow" placeholder="E-mail" class="follow-input">
                     </label>
                 </div>
@@ -419,16 +419,25 @@
                 <div class="form-field">
                     <label class="form-label">Имя
                         <input type="text" name="name" class="form-input">
+                        <svg class="icon-input" width="18" height="18">
+                            <use href="./images/symbol-defs.svg#icon-person"></use>
+                        </svg>
                     </label>
                 </div>
-                  <div class="form-field">
+                <div class="form-field">
                     <label class="form-label">Телефон
                         <input type="tel" name="phone-number" class="form-input">
+                        <svg class="icon-input" width="18" height="18">
+                            <use href="./images/symbol-defs.svg#icon-phone"></use>
+                        </svg>
                     </label>
                 </div>
                 <div class="form-field">
                     <label class="form-label">Почта
                         <input type="email" name="email" class="form-input">
+                        <svg class="icon-input" width="18" height="18">
+                            <use href="./images/symbol-defs.svg#icon-email"></use>
+                        </svg>
                     </label>
                 </div>
                 <div class="form-field-textarea">
@@ -437,13 +446,19 @@
                     </label>
                 </div>
                 <div class="checkbox-field">
-                    <label class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="conditions">Условия договора</a>
-                        <input class="checkbox" type="checkbox" name="consent" value="consent">
+                    <label class="checkbox-label">
+                        <input class="checkbox-consent" type="checkbox" name="consent" value="consent">                        
+                        <svg class="icon-check" width="16" height="15">
+                            <use href="./images/symbol-defs.svg#icon-check"></use>
+                        </svg>
+                        <svg class="icon-check-on" width="16" height="15">
+                            <use href="./images/symbol-defs.svg#icon-check-on"></use>
+                        </svg>
+                        Соглашаюсь с рассылкой и принимаю <a href="#" class="conditions">Условия договора</a>
                     </label>
                 </div>
                 <button type="submit" class="button modal-button">Отправить</button>
-            </form>
-            
+            </form>            
             <button data-modal-close class="button-close">
                 <svg width="11" height="11">
                     <use href="./images/symbol-defs.svg#icon-close"></use>
