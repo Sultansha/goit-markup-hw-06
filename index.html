@@ -416,26 +416,32 @@
             <form class="modal-form">
                 <div class="form-field">
                     <label class="form-label">Имя
-                        <input type="text" name="name" class="form-input">
-                        <svg class="icon-input" width="18" height="18">
-                            <use href="./images/symbol-defs.svg#icon-person"></use>
-                        </svg>
+                        <div class="input-thumb">
+                            <input type="text" name="name" class="form-input">
+                            <svg class="icon-input" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#icon-person"></use>
+                            </svg>
+                        </div>
                     </label>
                 </div>
                 <div class="form-field">
                     <label class="form-label">Телефон
-                        <input type="tel" name="phone-number" class="form-input">
-                        <svg class="icon-input" width="18" height="18">
-                            <use href="./images/symbol-defs.svg#icon-phone"></use>
-                        </svg>
+                        <div class="input-thumb">
+                            <input type="tel" name="phone-number" class="form-input">
+                            <svg class="icon-input" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                        </div>
                     </label>
                 </div>
                 <div class="form-field">
                     <label class="form-label">Почта
-                        <input type="email" name="email" class="form-input">
-                        <svg class="icon-input" width="18" height="18">
-                            <use href="./images/symbol-defs.svg#icon-email"></use>
-                        </svg>
+                        <div class="input-thumb">
+                            <input type="email" name="email" class="form-input">
+                            <svg class="icon-input" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#icon-email"></use>
+                            </svg>
+                        </div>
                     </label>
                 </div>
                 <div class="form-field-textarea">
@@ -447,7 +453,7 @@
                     <input class="checkbox-consent" type="checkbox" name="consent" value="consent" id="consent">
                     <label for="consent" class="checkbox-label">                        
                         Соглашаюсь с рассылкой и принимаю <a href="#" class="conditions">Условия договора</a>
-                    </label>
+                    </label>                    
                 </div>
                 <button type="submit" class="button modal-button">Отправить</button>
             </form>            
@@ -458,7 +464,6 @@
             </button>
         </div>
     </div>
-    <script src = "./js/modal.js" >
-    </script>
+    <script src = "./js/modal.js" ></script>
 </body>
 </html>

@@ -340,9 +340,15 @@ header {
   text-align: left;
 }
 
-.form-label {
+.input-thumb {
   position: relative;
+  bottom: 0;
+  left: 0;
 
+  margin-top: 4px;
+}
+
+.form-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -350,8 +356,9 @@ header {
 
 .icon-input {
   position: absolute;
-  bottom: 11px;
+  bottom: 50%;
   left: 12px;
+  transform: translate(50%, 50%);
   fill: var(--title-color);
   transition: fill var(--main-time) var(--main-timing-function);
 }
@@ -369,7 +376,7 @@ header {
 .form-input {
   width: 100%;
   padding: 11px 12px 11px 42px;
-  margin-top: 4px;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border var(--main-time) var(--main-timing-function);
@@ -412,10 +419,6 @@ header {
   padding-left: 36px;
 }
 
-.checkbox-consent:focus + .checkbox-label {
-  outline: 1px solid var(--title-color);
-}
-
 .conditions {
   display: inline-block;
   text-decoration: underline;
@@ -445,14 +448,22 @@ header {
   width: 16px;
   height: 15px;
   border-radius: 2px;
-  background-image: url(../images/svg/chek-off.svg);
+  background-image: url(../images/svg/check-off.svg);
   transition: background-image var(--main-time) var(--main-timing-function),
     background-color var(--main-timing-function) var(--main-timing-function);
 }
 
 .checkbox-consent:checked + .checkbox-label::before {
-  background-image: url(../images/svg/chek-on.svg);
+  background-image: url(../images/svg/check-on.svg);
   background-color: var(--accent-color);
+}
+
+.checkbox-consent:focus + .checkbox-label::before {
+  box-shadow: 0 0 0 1px rgb(16 16 16);
+}
+
+.checkbox-consent:focus:checked + .checkbox-label::before {
+  box-shadow: none;
 }
 
 .button-close {
@@ -920,12 +931,6 @@ header {
 }
 
 .work-element-description {
-  position: absolute;
-  width: 87%;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-
   font-size: 18px;
   line-height: 1.556;
   text-align: left;
@@ -942,6 +947,11 @@ header {
   width: 100%;
   height: 100%;
   z-index: -1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
 
   transform: translateY(100%);
   transition: transform var(--main-time) var(--main-timing-function),
