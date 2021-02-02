@@ -470,6 +470,10 @@ header {
   box-shadow: 0 0 0 1px rgb(16 16 16);
 }
 
+.checkbox-consent:hover + .checkbox-label::before {
+  cursor: pointer;
+}
+
 .button-close {
   position: absolute;
   right: 8px;
