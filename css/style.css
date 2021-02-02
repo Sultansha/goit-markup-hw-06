@@ -423,7 +423,7 @@ header {
   display: inline-block;
   width: 100%;
   text-align: left;
-  padding-left: 36px;
+  margin-left: 36px;
 }
 
 .conditions {
@@ -448,7 +448,7 @@ header {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
-  left: 13px;
+  left: -13px;
 
   content: '';
   display: inline-block;
