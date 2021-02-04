@@ -488,12 +488,12 @@ header {
   background-color: inherit;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition: fill var(--main-time) var(--main-timing-function);
+  transition: color var(--main-time) var(--main-timing-function);
 }
 
 .button-close:hover,
 .button-close:focus {
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* Section features */
