@@ -287,7 +287,8 @@ header {
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: var(--main-time) var(--main-timing-function);
+  transition: opacity var(--main-time) var(--main-timing-function),
+    visibility var(--main-time) var(--main-timing-function);
 }
 
 .backdrop.is-hidden {
